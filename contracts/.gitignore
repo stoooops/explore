@@ -1,0 +1,29 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+<<<<<<< HEAD
+=======
+dist
+>>>>>>> release
+
+#Hardhat files
+cache
+artifacts
+<<<<<<< HEAD
+=======
+test/artifacts
+contracts/ref
+
+.linted
+
+# from npm docker somehow?
+.npm
+.cache
+.local
+
+# Ethereum
+consensus
+execution
+>>>>>>> release

@@ -1,0 +1,23 @@
+{
+  "name": "explore",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "contracts"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "clean": "yarn workspaces run clean",
+    "down": "docker compose down",
+    "format": "yarn workspaces run format",
+    "format:check": "yarn workspaces run format:check",
+    "lint": "yarn workspaces run lint",
+    "mkgenesis": "docker compose down && cd testnet && pwd && yarn mkgenesis",
+    "regenesis": "docker compose down && cd testnet && pwd && yarn regenesis",
+    "start:ethereum": "docker compose up geth --force-recreate --remove-orphans",
+    "start:hardhat": "yarn workspace @openavatar/contracts start:hardhat",
+    "test": "yarn workspaces run test",
+    "up": "docker compose up --force-recreate --remove-orphans"
+  },
+  "license": "MIT"
+}
